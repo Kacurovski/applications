@@ -1,4 +1,5 @@
 @use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
 @use "sass:math";
 
 body {
@@ -7,13 +8,18 @@ body {
   line-height: var.$line-height-base;
   color: var.$text-color-base;
 }
+p{
+  font-size: var.$font-size-small;
+}
+ul{
+  font-size: var.$font-size-small;
+}
+hr{
+  border-top: 1px solid var.$text-color-blue;
+  width: 30%;
+  margin: 0 auto;
+  @include mix.mobile-l-styles{
+    width: 80%;
+  }
+}
 
-h1,
-h2,
-h3 {
-  margin-bottom: math.div(var.$gutter-base, 2);
-  font-weight: var.$font-weight-bold;
-}
-p, ul{
-  font-size: var.$font-size-medium;
-}

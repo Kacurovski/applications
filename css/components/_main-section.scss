@@ -1,0 +1,74 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+@use "sass:math";
+
+.main-section{
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(63, 62, 62, 0.7), rgba(63, 62, 62, 0.7)), url(../images/hero.jpg);
+    background-size: cover;
+    text-align: center;
+    @include mix.tablet-styles{
+        height: 70vh
+    }
+    .main-section-wrapper{
+        @extend %wrap-90;
+        header{
+            display: flex;
+            justify-content: space-between;
+            padding-top: math.div(var.$gutter-base, 1.5);
+            @include mix.mobile-l-styles{
+                flex-direction: column;
+                text-align: center;
+            }
+            .logo{
+                font-size: var.$font-size-medium;
+                font-weight: var.$font-weight-bold;
+                @include mix.mobile-l-styles{
+                    font-size: var.$gutter-base;
+                }
+            }
+            nav{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                ul{
+                    display: flex;
+                    list-style-type: none;
+                    font-size: var.$font-size-small;
+                    & :not(:last-child){
+                        margin-right: math.div(var.$gutter-base, 1.5);
+                    }
+                    @include mix.mobile-l-styles{
+                        font-size: math.div(var.$gutter-base, 1.5);
+                    }
+                }
+            }
+            a{
+                color: var.$text-color-primary;
+                text-decoration: none;
+            }
+        }
+        .main-section-content{
+            height: calc(100vh - 50px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: var.$text-color-primary;
+            @include mix.tablet-styles{
+                height: calc(70vh - 50px);
+            }
+            h1{
+                font-size: var.$font-size-big;
+                color: var.$text-color-primary;
+            }
+            p{
+                font-size: var.$gutter-base;
+                margin-bottom: math.div(var.$gutter-base, 1.5);
+            }
+            button{
+                @extend %button;
+            }
+        }
+    }
+}

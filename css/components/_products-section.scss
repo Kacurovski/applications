@@ -1,0 +1,75 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+@use "sass:math";
+
+.products-section{
+    background-color: var.$background-color-base;
+    .products-section-wrapper{
+        @extend %wrap-90;
+        @extend %section;
+        .products-section-content{
+        @extend %info-box;
+        hr{
+            border-width: 2px;
+        }
+        }
+        .products{
+            display: flex;
+            flex-wrap: wrap;
+            .products-inner-40{
+                flex-basis: 40%;
+                & :first-child{
+                    margin: 0 math.div(var.$gutter-base, 1.5) math.div(var.$gutter-base, 1.5) 0;
+                }
+                @include mix.tablet-styles{
+                    flex-basis: 100%;
+                    & :first-child{
+                        margin: 0 0 var.$gutter-base 0;
+                    }
+                }
+                .div-40{
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    height: 230px;
+                    @include mix.tablet-styles{
+                        height: 400px;
+                    }
+                    &.coast{
+                        background-image: url(../images/coast.jpg);
+                    }
+                    &.mountain{
+                        background-image: url(../images/mountain.jpg);
+                    }
+                }
+            }
+                .products-inner-60{
+                    flex-basis: 60%;
+                    & :first-child{
+                        margin: 0 math.div(var.$gutter-base, 1.5) math.div(var.$gutter-base, 1.5) 0;
+                    }
+                    @include mix.tablet-styles{
+                        flex-basis: 100%;
+                        & :first-child{
+                            margin: 0 0 var.$gutter-base 0;
+                        }
+                    }
+                    .div-60{
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        height: 230px;
+                        @include mix.tablet-styles{
+                            height: 400px;
+                        }
+                        &.island{
+                            background-image: url(../images/island.jpg);
+                        }
+                        &.balloon{
+                            background-image: url(../images/balloon.jpg);
+                        }
+                    }
+                }
+            }
+        }
+    }

@@ -1,1 +1,1 @@
-This challenge was about flex and sass
+This challenge was about sass and getting familiar with git
