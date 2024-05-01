@@ -1,1 +1,1 @@
-# applications
+This challenge was about javascript intro
