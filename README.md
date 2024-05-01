@@ -1,1 +1,1 @@
-# applications
+Starting and getting familiar with php
