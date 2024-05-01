@@ -1,0 +1,50 @@
+.bg-black{
+    background-color: black;
+}
+.bg-dark-grey{
+    background-color: #212121 !important;
+}
+.nav-item.active{
+    border-left: 2px solid white;
+}
+.banner-section {
+    height: 66.6vh;
+}
+.carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+.paralax-section{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.lights-bg-section{
+    background-image: url(./images/lights.jpg);
+}
+.modal-section-home{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(./images/media.jpg);
+}
+.modal-section-home .modal-trigger i, .gallery-img-div{
+    cursor: pointer;
+}
+.about-section {
+    background-image: url(./images/image1.jpg);
+    background-position: top left;
+}
+.carousel-control-next,
+.carousel-control-prev {
+  width: 50px !important;
+  top: 50% !important;
+  transform: translateY(-50%);
+}
+@media screen and (min-width: 1200px) {
+    .person-images img{
+        width: 50% !important;
+    }
+}
+@media screen and (max-width: 768px) {
+    .carousel-item img{
+        height: 100%;
+    }
+}
