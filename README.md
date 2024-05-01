@@ -1,1 +1,1 @@
-This challenge was about flex and @media
+This challenge was about flex and sass
