@@ -1,1 +1,1 @@
-# applications
+This challenge was about getting familiar with javascript objects
