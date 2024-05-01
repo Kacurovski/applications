@@ -1,1 +1,1 @@
-This challenge was about php pdo
+This challenge was about php session
