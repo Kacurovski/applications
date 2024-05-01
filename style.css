@@ -1,0 +1,134 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	background-color: #f09e84;
+}
+img {
+	width: 100%;
+}
+.p-top {
+	padding-top: 32px;
+}
+/* Color Library */
+.bg-lightblue {
+	background-color: #638caa;
+}
+.bg-gray {
+	background-color: #9aa7b8;
+}
+.bg-lightgray {
+	background-color: #b7ced6;
+}
+.bg-lightgreen {
+	background-color: #9ce0d1;
+}
+.bg-ocher {
+	background-color: #bcb9aa;
+}
+.bg-orange {
+	background-color: #f09e84;
+}
+.bg-light {
+	background-color: #dbdbdb;
+}
+.bg-purple {
+	background-color: #514354;
+}
+header {
+	padding: 10px;
+}
+nav {
+	width: 80%;
+	margin: 0 auto;
+}
+.logo {
+	float: left;
+	width: 50px;
+}
+ul {
+	list-style: none;
+	float: right;
+}
+ul li {
+	display: inline-block;
+	margin: 10px;
+}
+ul li a {
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+}
+ul li a:hover {
+	color: #99aaaf;
+}
+.clear::after {
+	content: "";
+	width: 100%;
+	display: block;
+	clear: both;
+}
+.appleDevices {
+	width: 40%;
+	margin: 0 auto;
+}
+.deviceboxes {
+	float: left;
+	width: 25%;
+	font-weight: bold;
+	font-size: 2rem;
+	text-align: center;
+}
+.deviceboxes i {
+	font-size: 80px;
+}
+.sectioncontainer {
+	float: left;
+	width: 50%;
+}
+.imgcontainer {
+	padding: 32px 0;
+}
+.imgdiv {
+	width: 35%;
+	margin: 0 auto;
+}
+.textdiv {
+	padding: 20px;
+	font-size: 25px;
+	color: white;
+	text-align: justify;
+	text-indent: 30px;
+}
+.titles {
+	font-size: 36px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 60px;
+}
+aside div {
+	float: left;
+	width: 33.3%;
+	color: white;
+	text-align: center;
+	font-size: 18px;
+}
+aside div :first-child {
+	color: black;
+}
+.contact {
+	text-align: center;
+	padding: 100px 0;
+}
+.contact a {
+	color: white;
+	font-size: 40px;
+	margin: 0 100px;
+}
+footer p {
+	text-align: center;
+	margin: 0;
+	padding: 30px;
+	color: white;
+}
