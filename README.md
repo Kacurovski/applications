@@ -1,1 +1,1 @@
-# applications
+This challenge was about creating database for E-Store
