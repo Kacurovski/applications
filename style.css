@@ -1,0 +1,16 @@
+body{
+    padding-top: 56px;
+}
+.home-section{
+    background-image: linear-gradient(rgba(22, 22, 22, 0.8), rgb(22, 22, 22, 0.8)), url(./images/home.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+.bg-purple{
+    background-color: #4900D5;
+}
+.fa-check{
+    font-size: 20px;
+}

@@ -1,114 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <script src="https://kit.fontawesome.com/66e5d91f72.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <section class="main-section" id="main-section">
-        <div class="main-section-wrapper">
-            <header>
-                <a href="" class="logo">Logo</a>
-                <nav>
-                    <ul>
-                        <li><a href="#main-section">Home</a></li>
-                        <li><a href="#products-section">Products</a></li>
-                        <li><a href="#about-section">About</a></li>
-                        <li><a href="#contacts">Contacts</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <div class="main-section-content">
-                <h1>Responsive Template</h1>
-                <p>Learn flexbox easily</p>
-                <button>i am a button</button>
-            </div>
+    <!-- BOOTSTRAP CSS  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <title>Blogger</title>
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="56">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="./index.html">BLOGGER</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home-section">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#explore">Explore</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#create">Create</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#share">Share</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid home-section text-light d-flex align-items-center justify-content-center" id="home-section">
+      <div class="row w-100"> 
+        <div class="col-lg-6 offset-lg-1 col-12 d-none d-lg-block">
+          <h1>Build <span class="text-danger">Social Profiles</span> and gain revenue and <span class="text-danger">profits</span></h1>
+          <ul class="list-group list-unstyled">
+            <li class="d-flex align-items-center"><i class="fa-solid fa-check m-4 text-primary bg-white p-1 rounded"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur soluta similique possimus voluptate, porro architecto quibusdam fugiat vel praesentium inventore.</li>
+            <li class="d-flex align-items-center"><i class="fa-solid fa-check m-4 text-primary bg-white p-1 rounded"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur soluta similique possimus voluptate, porro architecto quibusdam fugiat vel praesentium inventore.</li>
+            <li class="d-flex align-items-center"><i class="fa-solid fa-check m-4 text-primary bg-white p-1 rounded"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur soluta similique possimus voluptate, porro architecto quibusdam fugiat vel praesentium inventore.</li>
+          </ul>
         </div>
-    </section>
-    <section class="products-section" id="products-section">
-        <div class="products-section-wrapper">
-            <div class="products-section-content">
-                <h2>Some Of Our Work</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, saepe consequatur ea vero veritatis, quis sunt sequi harum sit minima amet. Dolorem repudiandae error id eos ipsam nesciunt </p>
-                <hr>
+        <div class="col-lg-4 col-12">
+          <form class="bg-purple py-4 px-3 text-center">
+            <p class="h4">Sign Up Today</p>
+            <p>Please fill up this form to register</p>
+            <div class="form-group">
+              <input type="text" class="form-control bg-red" id="inputUsername" aria-describedby="usernameHelp" placeholder="Username">
             </div>
-            <div class="products">
-                <div class="products-inner-40">
-                    <div class="div-40 coast"></div>
-                </div>
-                <div class="products-inner-60">
-                    <div class="div-60 island"></div>
-                </div>
-                <div class="products-inner-60">
-                    <div class="div-60 balloon"></div>
-                </div>
-                <div class="products-inner-40">
-                    <div class="div-40 mountain"></div>
-                </div>
+            <div class="form-group">
+              <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Email">
             </div>
+            <div class="form-group">
+              <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" id="inputConfirmPassword" placeholder="Confirm Password">
+            </div>
+            <button type="button" class="btn btn-outline-light btn-block">Submit</button>
+          </form>
         </div>
-    </section>
-    <section class="about-section" id="about-section">
-        <div class="about-wrapper">
-            <div class="about-content">
-                <h2>Features and Services</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, saepe consequatur ea vero veritatis, quis sunt sequi harum sit minima amet. Dolorem repudiandae error id eos ipsam nesciunt </p>
-                <hr>
-            </div>
-            <div class="about-section-icons">
-                <div class="about-section-icons-inner">
-                    <div class="about-section-icons-box">
-                        <i class="fa-solid fa-camera-retro"></i>
-                        <p>Photography</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi rem non reiciendis quam soluta atque?</p>
-                    </div>
-                </div>
-                <div class="about-section-icons-inner">
-                    <div class="about-section-icons-box">
-                        <i class="fa-solid fa-boxes-stacked"></i>
-                        <p>Web Development</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi rem non reiciendis quam soluta atque?</p>
-                    </div>
-                </div>
-                <div class="about-section-icons-inner">
-                    <div class="about-section-icons-box">
-                        <i class="fa-solid fa-newspaper"></i>
-                        <p>Content Editing</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi rem non reiciendis quam soluta atque?</p>
-                    </div>
-                </div>
-            </div>
+      </div>
+    </div>
+    <div class="container-fluid text-center bg-dark text-light p-5" id="explore">
+      <h2 class="h1">Explore</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quidem quam maxime laudantium nobis eos veniam, eligendi, beatae quas facere enim eius fuga nam, aliquid illum sed deleniti ratione cupiditate! Tempore blanditiis, veniam minima sit id ab iure non ipsa nihil maiores qui neque quibusdam, voluptatibus iusto in. Amet aliquid eveniet dolor odio consequuntur? Quas accusamus sint sapiente dolor vero!</p>
+      <button type="button" class="btn btn-outline-light">Find Out More</button>
+    </div>
+    <div class="container-fluid py-5">
+      <div class="row align-items-center">
+        <div class="col-lg-5 offset-lg-1 col-12">
+          <img src="./images/explore-section11.jpg" alt="picture of exploring" class="w-100 rounded-circle">
         </div>
-    </section>
-    <section class="form-section">
-        <div class="form-section-wrapper">
-            <div class="form-section-content">
-                <h2>Join Our Newsletter</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, saepe consequatur ea vero veritatis, quis sunt sequi harum sit minima amet. Dolorem repudiandae error id eos ipsam nesciunt </p>
-                <hr>
-            </div>
-            <form>
-                <input type="text" placeholder="email">
-                <button>Subscribe now</button>
-            </form>
+        <div class="col-lg-5 col-12">
+          <h2>Explore & Connect</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet eum numquam natus dignissimos eos tempore eaque iusto ad sed repudiandae, esse, voluptatem dolorem iste illum explicabo ratione. Cupiditate, adipisci? Dignissimos in amet hic nemo debitis itaque incidunt quia neque explicabo.</p>
+          <ul class="list-group list-unstyled">
+            <li class="d-flex align-items-center"><i class="fa-solid fa-check mx-4 my-2 text-white bg-dark p-1 rounded"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aliquid cumque, error architecto.</li>
+            <li class="d-flex align-items-center"><i class="fa-solid fa-check mx-4 my-2 text-white bg-dark p-1 rounded"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aliquid cumque, error architecto.</li>
+          </ul>
         </div>
-    </section>
-    <footer id="contacts">
-        <div class="footer-wrapper">
-            <div class="footer-icon-holder">
-                <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
-                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
-                <a href="https://www.snapchat.com/" target="_blank"><i class="fa-brands fa-square-snapchat"></i></a>
-                <a href="https://www.pinterest.com/" target="_blank"><i class="fa-brands fa-square-pinterest"></i></a>
-                <a href="https://github.com/" target="_blank"><i class="fa-brands fa-square-github"></i></a>
-            </div>
-            <p>Made by <span>a website.</span> images courtesy to <span>another website.</span></p>
-            <p> Please dont google the code, try to do it yourself.</p>
+      </div>
+    </div>
+    <div class="container-fluid text-center bg-purple text-white p-5" id="create">
+      <h2 class="h1">Create</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quidem quam maxime laudantium nobis eos veniam, eligendi, beatae quas facere enim eius fuga nam, aliquid illum sed deleniti ratione cupiditate! Tempore blanditiis, veniam minima sit id ab iure non ipsa nihil maiores qui neque quibusdam, voluptatibus iusto in. Amet aliquid eveniet dolor odio consequuntur? Quas accusamus sint sapiente dolor vero!</p>
+      <button type="button" class="btn btn-outline-light">Find Out More</button>
+    </div>
+    <div class="container-fluid p-5 bg-dark text-light">
+      <div class="row align-items-center">
+        <div class="col-lg-5 offset-lg-1 col-12">
+          <h2>Create Your Passion</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet eum numquam natus dignissimos eos tempore eaque iusto ad sed repudiandae, esse, voluptatem dolorem iste illum explicabo ratione. Cupiditate, adipisci? Dignissimos in amet hic nemo debitis itaque incidunt quia neque explicabo.</p>
+          <ul class="list-group list-unstyled">
+            <li class="d-flex align-items-center"><i class="fa-solid fa-check mx-4 my-2 text-dark bg-white p-1 rounded"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aliquid cumque, error architecto.</li>
+            <li class="d-flex align-items-center"><i class="fa-solid fa-check mx-4 my-2 text-dark bg-white p-1 rounded"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aliquid cumque, error architecto.</li>
+          </ul>
         </div>
-    </footer>
-</body>
+        <div class="col-lg-5 col-12">
+          <img src="./images/create-section11.jpg" alt="picture of working on a laptop" class="w-100 rounded-circle">
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid text-center bg-purple text-white p-5" id="share">
+      <h2 class="h1">Share</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quidem quam maxime laudantium nobis eos veniam, eligendi, beatae quas facere enim eius fuga nam, aliquid illum sed deleniti ratione cupiditate! Tempore blanditiis, veniam minima sit id ab iure non ipsa nihil maiores qui neque quibusdam, voluptatibus iusto in. Amet aliquid eveniet dolor odio consequuntur? Quas accusamus sint sapiente dolor vero!</p>
+      <button type="button" class="btn btn-outline-light">Find Out More</button>
+    </div>
+    <div class="container-fluid py-5">
+      <div class="row align-items-center">
+        <div class="col-lg-5 offset-lg-1 col-12">
+          <img src="./images/share-section11.jpg" alt="picture of people partying" class="w-100 rounded-circle">
+        </div>
+        <div class="col-lg-5 col-12">
+          <h2>Share What You Create</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet eum numquam natus dignissimos eos tempore eaque iusto ad sed repudiandae, esse, voluptatem dolorem iste illum explicabo ratione. Cupiditate, adipisci? Dignissimos in amet hic nemo debitis itaque incidunt quia neque explicabo.</p>
+          <ul class="list-group list-unstyled">
+            <li class="d-flex align-items-center"><i class="fa-solid fa-check mx-4 my-2 text-white bg-dark p-1 rounded"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aliquid cumque, error architecto.</li>
+            <li class="d-flex align-items-center"><i class="fa-solid fa-check mx-4 my-2 text-white bg-dark p-1 rounded"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aliquid cumque, error architecto.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid text-center bg-dark text-light py-5">
+      <h2 class="text-uppercase">Blogger</h2>
+      <p>Copyright © 2017</p>
+      <button type="button" class="btn btn-primary">Contact Us</button>
+    </div>
+    
+
+
+    <!-- JQUERY  LINK  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- POPPERJS LINK  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- BOOTSTRAP JS  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
