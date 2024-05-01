@@ -1,0 +1,5 @@
+1. Cloned the repo from gitlab localy.
+2. Created new branch for the project.
+3. Staged and Commited the files for the project to its branch.
+4. Pushed the branch of the challenge to GitLab. 
+5. Repeated the same steps for each of the Challenges. 
