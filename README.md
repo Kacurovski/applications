@@ -1,1 +1,1 @@
-# applications
+This challenge was about getting familiar with databases and mysql. Mostly querys exercices
