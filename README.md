@@ -19,4 +19,4 @@ Welcome to my repository where I document my growth from a novice to a skilled f
 
 This repository serves as both a portfolio and an active development space for personal and professional growth. I am currently working on adding applications from mentorships, workshops, and personal projects. Once all existing content is updated and uploaded, I will focus on developing and adding new content.
 
-Thank you for exploring my development journey. For collaboration or hiring inquiries, please contact me at [your-email@example.com].
+Thank you for exploring my development journey. For collaboration or hiring inquiries, please contact me at kristijankacurovski@gmail.com.
