@@ -1,0 +1,39 @@
+.welcome-page {
+    min-height: 100vh;
+}
+
+.logo-container img {
+    max-width: 200px;
+}
+
+.user-info {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+body{
+    background: linear-gradient(180deg, #ffcccc 0%, #ffffff 100%);
+}
+
+.user-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.btn-logout {
+    background-color: #000;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 16px;
+}

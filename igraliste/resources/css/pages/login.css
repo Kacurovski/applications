@@ -1,0 +1,55 @@
+.btn {
+    border-radius: 14px !important;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 9px !important;
+}
+
+
+.btn-social {
+    color: #000;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    border: 2px solid #f2c4c4;
+    background-color: #fff;
+    transition: all 0.3s;
+    width: 100%;
+    text-align: center;
+}
+
+.btn-social img {
+    height: 20px;
+    width: 20px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+body {
+    background: linear-gradient(180deg, #ffdee6 0%, #ffffff 100%);
+}
+
+.btn-social:hover {
+    background-color: #f2c4c4;
+    color: #000;
+    text-decoration: none;
+    border-color: #f2c4c4;
+}
+
+.login-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.logo-container {
+    margin-top: 70px;
+    margin-bottom: 120px;
+}

@@ -1,1 +1,1 @@
-# applications
+This was the third and final project completed at Brainster Academy. The design and requirements of the project were based on Figma. For more details, please refer to the project documentation.

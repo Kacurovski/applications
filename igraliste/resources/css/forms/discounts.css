@@ -1,0 +1,107 @@
+.select2-container .select2-selection--multiple {
+    min-height: 38px;
+    line-height: 1.5;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+}
+
+.select2-container--default
+    .select2-selection--multiple
+    .select2-selection__choice {
+    background-color: #e4e4e4;
+    border: none;
+    border-radius: 4px;
+    padding: 0 10px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.select2-container--default
+    .select2-selection--multiple
+    .select2-selection__choice__remove {
+    color: #666;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.select2-container--default
+    .select2-selection--multiple
+    .select2-selection__rendered {
+    margin-left: 4px;
+}
+
+.select2-container--default
+    .select2-selection--multiple
+    .select2-search--inline
+    .select2-search__field {
+    margin-top: 5px;
+    padding: 0;
+}
+
+.select2-container--open .select2-dropdown--below {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.select2-dropdown {
+    border-radius: 4px;
+}
+
+.select2-search__field {
+    padding: 8px;
+}
+
+.select2-results > .select2-results__options {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.select2-results__option {
+    display: flex;
+    align-items: center;
+}
+
+.select2-results__option .form-check-input {
+    margin-right: 10px;
+}
+
+.chk-select2 {
+    margin-right: 6px;
+}
+
+.tagify__dropdown.extra-properties .tagify__dropdown__item > img {
+    display: inline-block;
+    vertical-align: middle;
+    height: 20px;
+    transform: scale(0.75);
+    margin-right: 5px;
+    border-radius: 2px;
+    transition: 0.12s ease-out;
+}
+
+.tagify__dropdown.extra-properties .tagify__dropdown__item--active > img,
+.tagify__dropdown.extra-properties .tagify__dropdown__item:hover > img {
+    transform: none;
+    margin-right: 12px;
+}
+
+.tagify.countries .tagify__input {
+    min-width: 175px;
+}
+
+.tagify.countries tag {
+    white-space: nowrap;
+}
+
+.tagify.countries tag img {
+    display: inline-block;
+    height: 16px;
+    margin-right: 3px;
+    border-radius: 2px;
+    pointer-events: none;
+}
+
+.custom-input{
+    font-size: 15px !important;
+    color: #666560 !important;
+}

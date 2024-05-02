@@ -1,0 +1,106 @@
+CLIENT DOCUMENTATION FOR "Igraliste" FASHION ADMIN PANEL
+
+Overview
+
+The "Igraliste" fashion admin panel is a comprehensive platform designed for fashion retailers and online store administrators. It provides a streamlined experience for managing products, brands, discounts, and tags, ensuring a smooth operation of your online store.
+
+
+ACCESSING THE ADMIN PANEL
+
+Login:
+• Administrators must access the admin panel by visiting the login page (e.g., https://yourdomain.com/admin/login).
+• Enter your registered email and password to log in.
+• If you forget your password, click on the "Forgot Password" link to reset it. You will receive an email with instructions to create a new password.
+
+
+Sidebar Navigation:
+• Once logged in, the sidebar provides quick access to various sections of the admin panel, including:
+	• Products
+	• Brands
+	• Discounts
+	• Profile Settings
+
+• The sidebar can be expanded for a more detailed view by clicking anywhere except the icons.
+
+
+PRODUCT MANAGEMENT
+
+Viewing Products:
+• Products can be viewed in both list and grid formats.
+• List View: Displays the product ID, name, and an edit button.
+• Grid View: Shows the product name, available colors and sizes, quantity, price, and images.
+
+Adding Products:
+• Click on the "Add New Product" button to access the product creation form.
+• Fill in the details such as status, name, description, price, size, size advice, color, images, and tags.
+• You can select existing tags or create new ones during this process.
+
+Editing Products:
+In the list or grid view, click on the "Edit" button next to the product you wish to modify.
+Update the product information in the provided form and save your changes.
+
+
+DISCOUNT MANAGEMENT
+
+Viewing Discounts:
+• Discounts are displayed in a list view, showing the ID, name, and an edit button.
+
+Adding Discounts:
+• Click on the "Add New Discount" button to access the discount creation form.
+• Fill in details such as status, name, percentage, discount categories (e.g., winter, summer, Christmas), and applicable products.
+
+Editing Discounts:
+
+• Click on the "Edit" button next to the discount you wish to modify.
+• Update the discount information in the provided form and save your changes.
+
+
+BRAND MANAGEMENT
+
+Viewing Brands:
+• Brands are displayed in a list view, showing the ID, name, and an edit button.
+
+Adding Brands:
+• Click on the "Add New Brand" button to access the brand creation form.
+• Fill in details such as status, name, description, categories, images, and tags.
+• You can select existing tags or create new ones during this process.
+
+Editing Brands:
+• Click on the "Edit" button next to the brand you wish to modify.
+• Update the brand information in the provided form and save your changes.
+
+
+SEARCH FUNCTIONALITY
+
+• A search bar is available at the top of the list and grid views for products, brands, and discounts.
+• Use the search bar to quickly find specific items by entering keywords or product IDs.
+
+
+PROFILE MANAGEMENT
+
+• In the profile section, administrators can update their personal information, including:
+	• Profile Picture
+	• Name
+	• Email Address
+	• Phone Number
+	• Password
+
+
+VALIDATION RULES AND MESSAGES
+
+• Validation rules ensure data integrity by requiring certain criteria to be met before data is processed or saved.
+• Common validation rules include:
+	• Required fields must be filled.
+	• Email addresses must be in a valid format.
+	• Passwords must meet minimum strength requirements.
+	• Validation messages provide feedback to users about specific requirements that were not met, helping them correct their input.
+
+
+END USER FEATURES
+
+Registration and Login:
+• Registration: Users sign up by providing personal details such as name, surname, email, and password. Optional fields include address, phone number, biography, and profile picture. Users can opt-in to receive newsletters for updates on new deals and promotions.
+• Login: Users access their account using their registered email and password. A "Forgot Password" feature is available for password recovery.
+
+Social Login:
+• Users have the option to log in or register via Google or Facebook for a more convenient experience.

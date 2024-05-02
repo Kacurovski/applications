@@ -1,0 +1,31 @@
+.admin-login-container {
+    background: linear-gradient(180deg, #ffcccc 0%, #ffffff 100%);
+}
+.btn-login {
+    background-color: #000;
+    color: #fff;
+    border-radius: 30px;
+    padding: 12px 0;
+    font-weight: bold;
+}
+.login-footer a {
+    color: #000;
+    text-decoration: underline;
+}
+input {
+    border-radius: 10px !important;
+    padding: 9px !important;
+}
+.title-container {
+    margin-top: 80px;
+    margin-bottom: 180px;
+}
+
+.flow-container {
+    padding: 0 !important;
+}
+
+.custom-input{
+    font-size: 15px !important;
+    color: #666560 !important;
+}

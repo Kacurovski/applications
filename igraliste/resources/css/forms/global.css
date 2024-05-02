@@ -1,0 +1,108 @@
+body {
+    overflow: hidden;
+}
+
+/*Tagify */
+.tags-look .tagify__dropdown__item {
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 3px;
+    padding: 0.3em 0.5em;
+    border: 1px solid #666560;
+    background: #f3f3f3;
+    margin: 0.2em;
+    font-size: 0.85em;
+    color: black;
+    transition: 0s;
+}
+
+.tags-look .tagify__dropdown__item--active {
+    color: black;
+}
+
+.tags-look .tagify__dropdown__item:hover {
+    background: lightyellow;
+    border-color: gold;
+}
+
+.tags-look .tagify__dropdown__item--hidden {
+    max-width: 0;
+    max-height: initial;
+    padding: 0.3em 0;
+    margin: 0.2em 0;
+    white-space: nowrap;
+    text-indent: -20px;
+    border: 0;
+}
+
+.tagify {
+    --tags-disabled-bg: #f1f1f1;
+    --tags-border-color: #ddd;
+    --tags-hover-border-color: #ccc;
+    --tags-focus-border-color: #3595f6;
+    --tag-border-radius: 3px;
+    --tag-bg: none !important;
+    --tag-hover: #d3e2e2;
+    --tag-text-color: black;
+    --tag-text-color--edit: black;
+    --tag-pad: 0.1em 0.2em;
+    --tag-inset-shadow-size: 1.1em;
+    --tag-invalid-color: #d39494;
+    --tag-invalid-bg: rgba(211, 148, 148, 0.5);
+    --tag--min-width: 1ch;
+    --tag--max-width: 100%;
+    --tag-hide-transition: 0.3s;
+    --tag-remove-bg: rgba(211, 148, 148, 0.3);
+    --tag-remove-btn-color: black;
+    --tag-remove-btn-bg: none;
+    --tag-remove-btn-bg--hover: #c77777;
+    --input-color: inherit;
+    --placeholder-color: rgba(0, 0, 0, 0.4);
+    --placeholder-color-focus: rgba(0, 0, 0, 0.25);
+    --loader-size: 0.8em;
+    --readonly-striped: 1;
+    display: inline-flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    border: 1px solid var(--tags-border-color);
+    padding: 0;
+    line-height: 0;
+    cursor: text;
+    outline: 0;
+    position: relative;
+    box-sizing: border-box;
+    transition: 0.1s;
+}
+
+.tagify__tag__removeBtn {
+    display: none !important;
+}
+
+.tagify__tag-text {
+    font-weight: 600;
+}
+
+.tagify__tag-text:before {
+    content: "#";
+}
+
+.tagify__tag-text:after {
+    content: ",";
+}
+
+.tagify__tag {
+    margin: 2px !important;
+}
+
+.image-upload-view {
+    width: 95px !important;
+    height: 95px !important;
+    border: 1px solid black !important;
+    border-radius: 15px;
+    background-size: cover !important;
+    background-position: center !important;
+    margin-bottom: 5px;
+}
+.custom-file-upload {
+    margin-bottom: 5px;
+}
