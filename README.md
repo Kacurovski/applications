@@ -1,1 +1,1 @@
-# applications
+This challenge was about laravel blade. More information in the requirements folder

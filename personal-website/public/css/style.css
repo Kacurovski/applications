@@ -1,0 +1,50 @@
+.about-section, .blog-section, .contact-section, .home-section {
+    height: 50vh;
+    position: relative;
+    background-color: black;
+    z-index: 0;
+}
+.about-section:before, .blog-section:before, .contact-section::before, .home-section:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+.home-section:before{
+    background-image: url('../images/home-bg.jpg');
+}
+.about-section:before{
+    background-image: url('../images/about-bg.jpg');
+}
+.blog-section:before{
+    background-image: url('../images/post-bg.jpg');
+}
+.contact-section:before{
+    background-image: url('../images/contact-bg.jpg');
+}
+.about-text, .blog-text, .contact-text, .home-text {
+    position: relative;
+    z-index: 1;
+}
+.custom-gray-color{
+    color: lightgray;
+}
+.fa-brands{
+    font-size: 50px;
+}
+.social-icon:not(:last-child){
+    margin-right: 150px;
+}
+.form-control-underline {
+    border: none;
+    border-bottom: 1px solid #ced4da;
+    border-radius: 0;
+}
