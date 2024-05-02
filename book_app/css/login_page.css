@@ -1,0 +1,8 @@
+.form_holder {
+    transform: translate(0, -50px);
+  }
+  .login-form-section {
+    background-image: url(../assets/images/login-page-background.jpg);
+    background-position: center;
+    background-size: cover;
+  }

@@ -1,1 +1,1 @@
-# applications
+This was the second project from brainster academy, for more information check the requirements folder. Project documentation will be added soon

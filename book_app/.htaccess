@@ -1,0 +1,66 @@
+RewriteEngine On
+RewriteBase /book_app
+
+# Redirect requests to index.php without it appearing in the URL
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/index\.php [NC]
+RewriteRule ^index\.php$ /book_app/ [L,R=301]
+
+# Remove index.php from the URL
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.\*)$ index.php/$1 [L]
+
+# User-related pages
+# Example: /login -> login_page.php
+RewriteRule ^login$ login_page.php [L]
+# Example: /signup -> signup_page.php
+RewriteRule ^signup$ signup_page.php [L]
+# Example: /admin_dashboard -> admin_dashboard.php
+RewriteRule ^admin_dashboard$ admin_dashboard.php [L]
+# Example: /logout -> php/validations/user/logout.php
+RewriteRule ^logout$ php/validations/user/logout.php [L]
+# Rewrite single_book_page/4 to single_book/4
+RewriteRule ^single_book/(\d+)$ single_book_page.php?book_id=$1 [QSA,L]
+# Example: /register_user -> php/validations/user/register_user.php
+RewriteRule ^register_user$ php/validations/user/register_user.php [L]
+# Example: /verify_user -> php/validations/user/verify_user.php
+RewriteRule ^verify_user$ php/validations/user/verify_user.php [L]
+
+
+# Book-related pages
+# Example: /add_book -> php/validations/book/add_book.php
+RewriteRule ^add_book$ php/validations/book/add_book.php [L]
+# Example: /single_book/25 -> single_book_page.php?book_id=25
+RewriteRule ^single_book/(\d+)$ single_book_page.php?book_id=$1 [QSA,L]
+# Example: /book_comments/25 -> book_comments.php?book_id=25
+RewriteRule ^book_comments/(\d+)$ book_comments.php?book_id=$1 [QSA,L]
+# Example: /update_book -> php/validations/book/update_book.php
+RewriteRule ^update_book$ php/validations/book/update_book.php [L]
+
+# Category-related pages
+# Example: /add_category -> php/validations/category/add_category.php
+RewriteRule ^add_category$ php/validations/category/add_category.php [L]
+# Example: /update_category -> php/validations/category/update_category.php
+RewriteRule ^update_category$ php/validations/category/update_category.php [L]
+
+# Author-related pages
+# Example: /add_author -> php/validations/author/add_author.php
+RewriteRule ^add_author$ php/validations/author/add_author.php [L]
+# Example: /update_author -> php/validations/author/update_author.php
+RewriteRule ^update_author$ php/validations/author/update_author.php [L]
+
+# Comment-related pages
+# Example: /add_comment -> php/validations/comment/add_comment.php
+RewriteRule ^add_comment$ php/validations/comment/add_comment.php [L]
+# Example: /handle_comment -> php/validations/comment/handle_comment.php
+RewriteRule ^handle_comment$ php/validations/comment/handle_comment.php [L]
+# Example: /delete_comment -> php/validations/comment/delete_comment.php
+RewriteRule ^delete_comment$ php/validations/comment/delete_comment.php [L]
+
+# Notes-related Pages
+# Rewrite requests to /api/handle_note to the actual PHP script
+# Example: /api/handle_note -> php/validations/handle_note.php
+RewriteRule ^api/handle_note$ php/validations/handle_note.php [L]
+# Rewrite requests to /api/add_note to the actual PHP script
+# Example: /api/add_note -> php/validations/add_note.php
+RewriteRule ^api/add_note$ php/validations/add_note.php [L]
