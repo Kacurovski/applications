@@ -1,1 +1,1 @@
-# applications
+This was the second hackathon hosted by Brainster Academy. I collaborated with a team of five members to develop the application.
