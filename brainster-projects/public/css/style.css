@@ -1,0 +1,96 @@
+.main-container{
+    height: calc(100vh - 93px);
+}
+
+.logo-img{
+   width: 50px;
+}
+
+.navbar-holder{
+    width: 60%;
+}
+
+.banner-image {
+    height: 60vh;
+    position: relative;
+    background-color: black;
+    z-index: 0;
+    background-image: url('../images/synthesio-0301.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.banner-image::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black; /* Set the overlay color */
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.banner-text {
+    position: relative;
+    z-index: 1;
+}
+
+
+.card-buttons {
+    display: none;
+    background-color: lightgray;
+}
+
+.card-buttons.btn{
+    background-color: lightgray;
+}
+
+.edit-buttons {
+    background-color: lightgray;
+}
+
+.card-holder:hover .card-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.card-box:hover{
+    border: 2px solid orange !important;
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.5);
+}
+
+footer{
+    margin-top: auto !important;
+}
+
+.center-vertical {
+    transform: translateY(-50%);
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .navbar-holder {
+        width: 90%;
+    }
+}
+
+@media (max-width: 600px) {
+    .mobile-font {
+        font-size: 12px;
+    }
+
+    .navbar-holder{
+        width: 100%;
+    }
+
+    .logo-holder{
+        width: 100%;
+    }
+
+    .logo-wrapper{
+        margin: 0px auto;
+    }
+}

@@ -1,1 +1,1 @@
-# applications
+This is laravel challenge 24, for more information check the requirements folder.
