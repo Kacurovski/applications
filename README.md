@@ -1,1 +1,1 @@
-This challenge is laravel intro, getting familliar with laravel
+This challenge is laravel intro, getting familliar with laravel. More information in the requirements folder
