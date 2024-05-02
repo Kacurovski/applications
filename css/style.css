@@ -1,0 +1,132 @@
+/* Color Library */
+
+.bg-yellow{
+    background-color: #ffc107;
+}
+
+.color-red{
+    color: red;
+}
+
+/* Color Library */
+
+.navbar .navbar-brand img{
+    width: 60px;
+}
+.navbar-collapse .navbar-nav li a, .navbar-collapse .btn{
+    font-size: 18px;
+}
+a.nav-link{
+    color: black;
+}
+.navbar-collapse .btn-danger:hover{
+    background-color: transparent;
+    color: #4C3A02;
+}
+.navbar .navbar-nav .nav-item{
+    display: flex;
+}
+.navbar-toggler img{
+    width: 50px;
+    transform: rotateX(180deg);
+    transform: rotateY(180deg);
+}
+.hover-effect a {
+	letter-spacing: 0;
+	transition: 0.35s;
+}
+
+.hover-effect a:hover, .hover-effect a:active {
+	letter-spacing: 5px;
+	transition: 0.35s;
+}
+
+.hover-effect a:after {
+	bottom: -10px;
+}
+
+.hover-effect a:before {
+	top: -10px;
+}
+
+.hover-effect a:after, .hover-effect a:before {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	border: 1px solid rgba(255, 255, 255, 0);
+	content: " ";
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	transition: all 280ms ease-in-out;
+	width: 0;
+}
+
+.hover-effect a:hover:after, .hover-effect a:hover:before {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	border-color: black;
+	transition: width 350ms ease-in-out;
+	width: 100%;
+}
+
+.hover-effect a:hover:before {
+	width: 100%;
+}
+
+ @media (max-width: 500px) {
+    .hover-effect a:hover:after, .hover-effect a:hover:before{
+        border-color: white !important;
+    }
+  }
+
+.banner-section {
+    height: 60vh;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.video-background {
+    z-index: -1;
+}
+.video-background video {
+    object-fit: cover;
+}
+.banner-content {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+.banner-content.show {
+    opacity: 1;
+    transform: translateY(0%);
+}
+.text-shadow-big {
+    text-shadow: 6px 6px 10px rgba(0, 0, 0, 0.5);
+}
+.modal .modal-dialog .modal-content .modal-header .btn-close{
+    top: 16px !important;
+    right: 16px !important;
+}
+
+.table-div{
+    height: 500px !important;
+}
+
+ @media (max-width: 500px) {
+	.form-submit-div .display-2{
+		font-size: 28px;
+	}
+	.table-holder .table-inner p{
+		font-size: 20px;
+	}
+  }
+input[type="checkbox"] {
+    display: none;
+}
+.card {
+    transition: transform 0.4s ease;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+#filter-marketing-label, #filter-coding-label, #filter-design-label{
+    cursor: pointer;
+}

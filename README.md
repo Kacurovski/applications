@@ -1,1 +1,1 @@
-# applications
+This was the first project from brainster academy. The project was done before learning databases, php and javascript. The bonus challenge for this project was to use database, php and javascript before learning it
